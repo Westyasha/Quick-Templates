@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Templates - Ваши шаблоны на новом уровне</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <header class="main-header">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 logo-container">
+                <img src="images/logo.png" alt="Quick Templates Logo" class="h-10 w-10">
+                <div class="text-2xl font-extrabold tracking-tight">
+                    Quick <span class="gradient-text">Templates</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 nav-links">
+                <a class="hover:text-indigo-400 transition-colors" href="#features">Возможности</a>
+                <a class="hover:text-indigo-400 transition-colors" href="#gallery">Галерея</a>
+            </div>
+            <a class="download-button" href="https://chrome.google.com/webstore" target="_blank">
+                <span class="material-icons">get_app</span>
+                Установить
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+             <div class="grid-overlay"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h1 class="main-title">
+                    Ваши шаблоны. <br> <span class="animated-gradient-text">На новом уровне.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Quick Templates — это мощный инструмент для управления шаблонами, который заменяет Response Box и предлагает невиданную гибкость с Drag & Drop, синхронизацией и многим другим.
+                </p>
+                <div class="fade-in" style="animation-delay: 0.4s;">
+                    <a class="cta-button-main" href="https://chrome.google.com/webstore" target="_blank">
+                        <span class="material-icons">add</span>
+                        Установить для Chrome
+                    </a>
+                </div>
+                 <p class="text-sm text-slate-500 mt-4 fade-in" style="animation-delay: 0.6s;">Работает на любом сайте!</p>
+            </div>
+        </section>
+
+        <div class="features-wrapper">
+             <section id="features" class="features-section">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                         <h2 class="section-title gradient-text">Ключевые возможности</h2>
+                         <p class="section-subtitle">Все, что нужно для быстрой и эффективной работы с текстовыми шаблонами.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="feature-card fade-in">
+                            <div class="feature-icon"><span class="material-icons">rule</span></div>
+                            <h3 class="feature-title">Интерфейс Drag & Drop</h3>
+                            <p class="text-slate-400">Сортируйте шаблоны и категории простым перетаскиванием. Структура моментально синхронизируется с контекстным меню.</p>
+                        </div>
+                        <div class="feature-card fade-in" style="animation-delay: 0.2s;">
+                            <div class="feature-icon"><span class="material-icons">import_export</span></div>
+                            <h3 class="feature-title">Импорт и Экспорт</h3>
+                            <p class="text-slate-400">Сохраняйте шаблоны и настройки в .json файл. Идеально для бэкапов или переноса данных на другое устройство.</p>
+                        </div>
+                        <div class="feature-card fade-in" style="animation-delay: 0.4s;">
+                           <div class="feature-icon"><span class="material-icons">mouse</span></div>
+                            <h3 class="feature-title">Контекстное меню</h3>
+                            <p class="text-slate-400">Мгновенный доступ к шаблонам через ПКМ. Копируйте в буфер или вставляйте прямо в поле ввода.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                     <h2 class="section-title gradient-text">Интерфейс в действии</h2>
+                     <p class="section-subtitle">Оцените удобный и интуитивно понятный дизайн Quick Templates.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-src="images/1.png"><img src="images/1.png" alt="Скриншот интерфейса 1"></div>
+                    <div class="gallery-item" data-src="images/2.png"><img src="images/2.png" alt="Скриншот интерфейса 2"></div>
+                    <div class="gallery-item" data-src="images/3.png"><img src="images/3.png" alt="Скриншот интерфейса 3"></div>
+                    <div class="gallery-item" data-src="images/4.png"><img src="images/4.png" alt="Скриншот интерфейса 4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6">Готовы ускорить свою работу?</h2>
+                <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">
+                    Установите Quick Templates для Chrome всего в один клик и начните экономить время уже сегодня.
+                </p>
+                <a class="cta-button-main" href="https://chrome.google.com/webstore" target="_blank">
+                    <span class="material-icons">add</span>
+                    Установить бесплатно
+                </a>
+                <p class="text-sm text-slate-500 mt-4">Скоро: поддержка Firefox и Edge</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500">
+            <p>© 2024 Quick Templates. Все права защищены.</p>
+            <p class="text-xs mt-2">Это неофициальное расширение, созданное для улучшения вашего опыта.</p>
+        </div>
+    </footer>
+
+    <div id="image-modal" class="modal-overlay">
+        <img src="" alt="Просмотр изображения" class="modal-content">
+        <div class="modal-close-button">×</div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
