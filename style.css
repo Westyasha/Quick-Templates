@@ -1,12 +1,51 @@
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: #0B0F19;
+    background-color: #0c192c;
     color: #E0E0E0;
     overflow-x: hidden;
 }
 
 body.modal-open {
     overflow: hidden;
+}
+
+.domains-background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c192c;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.domains-bubbles span {
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    animation: domains-bubble-animate 15s linear infinite;
+    --bubble-blue: #4fc3dc;
+    --bubble-pink: #ff2d75;
+}
+
+.domains-bubbles span.blue {
+    background: var(--bubble-blue);
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px var(--bubble-blue), 0 0 100px var(--bubble-blue);
+}
+
+.domains-bubbles span.pink {
+    background: var(--bubble-pink);
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px var(--bubble-pink), 0 0 100px var(--bubble-pink);
+}
+
+@keyframes domains-bubble-animate {
+    0% {
+        transform: translateY(0) scale(0);
+    }
+    100% {
+        transform: translateY(-120vh) scale(1);
+    }
 }
 
 .gradient-text {
@@ -43,7 +82,7 @@ body.modal-open {
     top: 0;
     z-index: 50;
     padding: 1.25rem 1rem;
-    background-color: rgba(11, 15, 25, 0.5);
+    background-color: rgba(12, 25, 44, 0.5);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgb(30 41 59);
 }
